@@ -20,7 +20,6 @@ public class DelMemberController extends HttpServlet {
         MemberDTO dto = MemberDTO.builder()
                 .mid( request.getParameter("mid")).build();
 
-
         try {
             memberService.delete(dto);
         } catch (Exception e) {
